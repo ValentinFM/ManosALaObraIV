@@ -1,0 +1,47 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box; /* */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-roboto;
+  background-color: $color-negro; /* Fondo Dark */
+  color: $color-blanco;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+/* Clase base para Botón de Icono
+  - Transparente
+  - Altura 48px
+  - Padding 8px
+  - Texto 24px
+*/
+.icon-button {
+  font-family: $font-roboto;
+  background-color: transparent;
+  color: $color-blanco;
+  font-size: $font-size-task; /* 24px */
+  
+  height: 48px;
+  width: 48px;
+  padding: $grid-unit; /* 8px */
+  
+  border: 1px solid $color-blanco-20;
+  border-radius: $border-radius; /* 4px */
+  cursor: pointer;
+  
+  /* Flexbox para centrar el ícono */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $color-blanco-20;
+  }
+}

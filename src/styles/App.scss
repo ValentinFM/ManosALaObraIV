@@ -1,0 +1,37 @@
+/* 1. GLOBALES */
+@import 'variables';
+@import 'base';
+
+/* 2. COMPONENTES */
+@import 'TodoHeader';
+@import 'TodoForm';
+@import 'TodoList';
+@import 'TodoItem';
+@import 'TodoEmpty';
+
+/* 3. LAYOUT DE APP.JSX */
+.container {
+  max-width: 512px; /* */
+  margin: 0 auto;
+  position: relative; 
+}
+
+/* El contenido que va DEBAJO del header fijo */
+.content {
+  /* Dejamos espacio para el Header fijo (36px + 16px*2 padding) ~= 68px */
+  /* 80px (10 * 8) nos da un margen seguro */
+  padding-top: $grid-unit * 10;
+  
+  /* Márgenes laterales en mobile */
+  @media (max-width: 560px) {
+    margin: 0 $grid-unit * 3; /* 24px */
+  }
+}
+
+/* Divisor */
+.divider {
+  height: 2px;
+  border: none;
+  background-color: $color-blanco-20;
+  margin: $grid-unit * 2 0; /* 16px */
+}

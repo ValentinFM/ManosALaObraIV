@@ -1,0 +1,29 @@
+@import 'variables';
+
+.add-task-form {
+  display: flex; /* Flexbox */
+  align-items: center;
+  gap: $grid-unit; /* 8px */
+  padding: $grid-unit; /* 8px */
+  background-color: $color-blanco-20;
+  border-radius: $border-radius;
+
+  input[type="text"] {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    border: none; /* Input invisible */
+    background: none;
+    font-size: $font-size-task; /* 24px */
+    color: $color-blanco;
+    outline: none;
+    padding: $grid-unit; /* 8px padding interno */
+
+    &::placeholder {
+      color: $color-blanco-50;
+    }
+  }
+
+  .add-button {
+    // Hereda de .icon-button
+    flex-shrink: 0; // Evita que se encoja
+  }
+}

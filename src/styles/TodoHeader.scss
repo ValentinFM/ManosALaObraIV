@@ -1,0 +1,28 @@
+@import 'variables';
+
+.app-header {
+  font-size: $font-size-header; /* 36px */
+  color: $color-blanco; /* */
+  
+  /* Layout Fijo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* Centra el header */
+  
+  max-width: 512px; /* Coincide con el container */
+  width: 100%;
+  
+  padding: ($grid-unit * 2) 0; /* 16px padding vertical */
+  text-align: center;
+  background-color: $color-negro; /* Fondo para que no sea transparente */
+  z-index: 10;
+  
+  /* En mobile, usa los márgenes de 24px */
+  @media (max-width: 560px) {
+    padding-left: $grid-unit * 3; /* 24px */
+    padding-right: $grid-unit * 3;
+    text-align: left; /* Como se ve en el mockup mobile */
+  }
+}

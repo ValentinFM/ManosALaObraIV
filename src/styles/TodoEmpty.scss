@@ -1,0 +1,8 @@
+@import 'variables';
+
+.empty-message {
+  font-size: $font-size-task; /* 24px, igual que las tareas */
+  padding: ($grid-unit * 2) $grid-unit; /* 16px 8px */
+  text-align: center;
+  color: $color-blanco-50;
+}
